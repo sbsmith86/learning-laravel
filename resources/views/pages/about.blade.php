@@ -12,6 +12,6 @@
       @endforeach
     </ul>
   @endif
-    
+
   <p>Laravel developing muthers</p>
 @stop

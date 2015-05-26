@@ -14,7 +14,7 @@ class PagesController extends Controller {
     // $people = ['Me', 'Her', 'Actually, just me'];
     $people = [];
 
-    // The `compact` function takes existing variables and makes 
+    // The `compact` function takes existing variables and makes
     // them into an associative array.
     return view('pages.about', compact('first', 'last', 'people'));
   }
