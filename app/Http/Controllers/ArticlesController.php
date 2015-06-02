@@ -10,6 +10,16 @@ use Auth;
 class ArticlesController extends Controller {
 
   /*
+   * Only show the create page to authenticated users.
+   *
+   */
+  public function __construct() {
+
+    $this->middleware('auth', ['only' => 'create']);
+
+  }
+
+  /*
    * Show all published articles.
    *
    * @return articles view
